@@ -90,11 +90,11 @@ export default class ChangeOwner extends React.Component {
             <div className="col s12">
             <table className='striped responsive-table'>
                 <tbody>
-                    <tr><td style={{width: '50%', textAlign: 'right'}}>Key :</td><td>{this.state.key}</td></tr>
-                    <tr><td style={{width: '50%', textAlign: 'right'}}>Make :</td><td>{this.state.car.make}</td></tr>
-                    <tr><td style={{width: '50%', textAlign: 'right'}}>Model :</td><td>{this.state.car.model}</td></tr>
-                    <tr><td style={{width: '50%', textAlign: 'right'}}>Color :</td><td>{this.state.car.color}</td></tr>
-                    <tr><td style={{width: '50%', textAlign: 'right'}}>Old Owner :</td><td>{this.state.car.owner}</td></tr>                    
+                    <tr><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>Name </td><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>{this.state.key}</td></tr>
+                    <tr><td style={{width: '50%', textAlign: 'center', border: "3px solid rgb(0, 0, 0)"}}>Make </td><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>{this.state.car.make}</td></tr>
+                    <tr><td style={{width: '50%', textAlign: 'center', border: "3px solid rgb(0, 0, 0)"}}>Model </td><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>{this.state.car.model}</td></tr>
+                    <tr><td style={{width: '50%', textAlign: 'center', border: "3px solid rgb(0, 0, 0)"}}>Color </td><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>{this.state.car.color}</td></tr>
+                    <tr><td style={{width: '50%', textAlign: 'center', border: "3px solid rgb(0, 0, 0)"}}>Old Owner :</td><td style={{width: '50%', textAlign: 'center',border: "3px solid rgb(0, 0, 0)"}}>{this.state.car.owner}</td></tr>                    
                 </tbody>
             </table>
             </div>

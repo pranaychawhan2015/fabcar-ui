@@ -21,7 +21,7 @@ class App extends React.Component {
 				<nav className='light-blue darken-3'>
 					<div className="nav-wrapper">
 						<div className='container'>
-							<Link to='/' className="brand-logo">Fabric Car</Link>
+							<Link to='/' className="brand-logo">Fabric Cars</Link>
 							<ul id="nav-mobile" className="right hide-on-med-and-down">
 								<li><Link to='/'><i className='material-icons left'>directions_car</i>All Cars</Link></li>
 								<li><Link to='/add'><i className="material-icons left">add_circle_outline</i>Add Car</Link></li>

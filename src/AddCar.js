@@ -96,7 +96,7 @@ export default class AddCar extends React.Component {
                         <div className="row">
                             <div className="input-field col s12">
                                 <input id="key" type="text" className="validate" required value={this.state.key} onChange={this.onKeyChanged.bind(this)} />
-                                <label htmlFor="key">Key (e.g. CAR12)</label>
+                                <label htmlFor="key">Name (e.g. CAR12)</label>
                             </div>
                         </div>
                         <div className="row">
@@ -109,7 +109,7 @@ export default class AddCar extends React.Component {
                                 <label htmlFor="model">Model (e.g. NX 200t)</label>
                             </div>
                             <div className="input-field col s4">
-                                <select className="browser-default" value={this.state.color} onChange={this.onColorChanged.bind(this)}>
+                                <select className="browser-default" style={{border: "1px solid rgb(0, 0, 0)"}} value={this.state.color} onChange={this.onColorChanged.bind(this)}>
                                     <option value="" disabled>Choose color</option>
                                     <option>Black</option>
                                     <option>White</option>

@@ -27,12 +27,12 @@ export default class AllCars extends React.Component {
 
     render() {
         const tbody = this.state.cars.map(car => {
-            return <tr key={car.Key}>
-                <td>{car.Key}</td>
-                <td>{car.Record.make}</td>
-                <td>{car.Record.model}</td>
-                <td>{car.Record.color}</td>
-                <td>{car.Record.owner}</td>
+            return <tr style={{border: "3px solid rgb(0, 0, 0)"}}>
+                <td style={{border: "3px solid rgb(0, 0, 0)"}}>{car.Key}</td>
+                <td style={{border: "3px solid rgb(0, 0, 0)"}}>{car.Record.make}</td>
+                <td style={{border: "3px solid rgb(0, 0, 0)"}}>{car.Record.model}</td>
+                <td style={{border: "3px solid rgb(0, 0, 0)"}}>{car.Record.color}</td>
+                <td style={{border: "3px solid rgb(0, 0, 0)"}}>{car.Record.owner}</td>
                 <td>
                     <Link to={'/change-owner/' + car.Key} className="waves-effect waves-light btn light-blue darken-3"><i className="material-icons">edit</i></Link>
                 </td>
@@ -44,12 +44,12 @@ export default class AllCars extends React.Component {
                 <table className='striped responsive-table centered'>
                     <thead>
                         <tr>
-                            <th>Key</th>
-                            <th>Make</th>
-                            <th>Model</th>
-                            <th>Color</th>
-                            <th>Owner</th>
-                            <th style={{width: 100}}>Action</th>
+                            <th style={{border: "3px solid rgb(0, 0, 0)"}}>Name</th>
+                            <th style={{border: "3px solid rgb(0, 0, 0)"}}>Make</th>
+                            <th style={{border: "3px solid rgb(0, 0, 0)"}}>Model</th>
+                            <th style={{border: "3px solid rgb(0, 0, 0)"}}>Color</th>
+                            <th style={{border: "3px solid rgb(0, 0, 0)"}}>Owner</th>
+                            <th style={{width: 100,border: "3px solid rgb(0, 0, 0)"}}>Action</th>
                         </tr>
                     </thead>
 
