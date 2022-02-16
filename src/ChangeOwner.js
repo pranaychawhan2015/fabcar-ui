@@ -32,8 +32,8 @@ export default class ChangeOwner extends React.Component {
         this.props.setLoading(true);
         axios.put('http://'+  process.env.REACT_APP_API_HOST  +':'+ process.env.REACT_APP_API_PORT+'/cars', {
             key: this.state.key,
-            owner: this.state.owner,
-            policies: this.state.policies
+            owner: this.state.owner
+            //policies: this.state.policies
         }).then(res => {
             this.props.setLoading(false);
             if (res.data.status) {
@@ -125,12 +125,12 @@ onRemove={this.onRemove} // Function will trigger on remove event
 displayValue="label" // Property name to display in the dropdown options
 /> */}
 
-<select className='browser-default' required value={this.state.policyName} onChange={this.onPolicyChanged.bind(this)}>
+{/* <select className='browser-default' required value={this.state.policyName} onChange={this.onPolicyChanged.bind(this)}>
                                                        <option value=""   disabled>Choose policy</option>
                                                        <option label="Manager and Owner Approvals" value={[['Manager'],['Owner']]}>Manager and Owner Approvals</option>
                                                        <option value={["Sales"]} label='Sales Department Approvals'>Sales Department Approvals</option>
                                                        <option value={["Manufacturer"]} label='Manufacturer Approvals'>Manufacturer Approvals</option>        
-</select>
+</select> */}
 
                         </div>
 

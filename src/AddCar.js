@@ -56,8 +56,8 @@ export default class AddCar extends React.Component {
             make: this.state.make,
             model: this.state.model,
             color: this.state.color,
-            owner: this.state.owner,
-            policies: this.state.policies
+            owner: this.state.owner
+            //policies: this.state.policies
         }).then(res => {
             this.props.setLoading(false);
             if (res.data.status) {
@@ -127,14 +127,14 @@ export default class AddCar extends React.Component {
                                 <label htmlFor="owner">Owner</label>
                             </div>
                         </div>
-                        <div>
+                        {/* <div>
                 <select className='browser-default' required  value={this.state.policyName} onChange={this.onPolicyChanged.bind(this)}>
                                                        <option value=""   disabled>Choose policy</option>
                                                        <option label="Manager and Owner Approvals" value={[['Manager'],['Owner']]}>Manager and Owner Approvals</option>
                                                        <option value={["Sales"]} label='Sales Department Approvals'>Sales Department Approvals</option>
                                                        <option value={["Manufacturer"]} label='Manufacturer Approvals'>Manufacturer Approvals</option>        
 </select>
-</div>
+</div> */}
                         <div className='row'>
                             <div className="input-field col s12">
                                 <button className="btn waves-effect waves-light light-blue darken-3" type="submit" name="action">Submit
